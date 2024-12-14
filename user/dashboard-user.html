@@ -88,6 +88,12 @@
         font: 550 14px 'Poppins', sans-serif;
         padding: 8px 20px;
         }
+
+        .btn-primary-profile:hover {
+        background: #bd874f; 
+        border: 2px solid #f8f3ed; 
+        color: #f8f3ed; 
+        }
         
         .profile-picture-section {
         background: #fff;
@@ -171,12 +177,23 @@
             border: none;
             cursor: pointer;
             padding: 0;
+            transition: transform 0.3s ease; 
+        }
+
+        .bookmark-action:hover {
+            transform: scale(1.1);
         }
 
         .action-icon {
             width: 50px;
             height: 50px;
+            transition: opacity 0.3s ease; 
         }
+
+        .bookmark-action:hover .action-icon {
+            opacity: 0.7; 
+        }
+
         
         @media (max-width: 991px) {
         .main-content {
@@ -242,7 +259,7 @@
           <div class="profile-empty"></div>
           <div class="profile-container">
             <a href="dashboard-user.html" class="profile-wrapper">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0f8083a2af05b8315cb39f0ee55f7ffcc527bc8dad48c168e7cb295095ffb69?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="User profile" class="profile-image" />
+              <img src="../assets/profile-bar.png" alt="User profile" class="profile-image" />
               <span class="profile-name">Nabila</span>
             </a>
           </div>
@@ -280,7 +297,7 @@
       <!-- ======== UPLOAD FOTO PROFILE ======== -->
         <div class="profile-picture-section">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/71a2fb7aa070218e7a9b043b4c0095d72c1d71e5603b41db3ab9f4a92d041727?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d"
+            src="../assets/update-profile.png"
             alt="Current profile picture"
             class="current-profile-picture"
           />
@@ -301,24 +318,24 @@
         <div class="bookmarks-list">
 
           <article class="bookmark-card">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8552bf776a0158325454421348cebb12b034dec1d822ce834e68481ba3f112be?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="The Nile River" class="bookmark-image" />
+            <img src="../assets/the-nile.png" alt="The Nile River" class="bookmark-image" />
             <div class="bookmark-content">
               <h3 class="bookmark-title">THE NILE</h3>
               <p class="bookmark-description">The Nile, stretching over 6,650 kilometers, is the world's longest river and a lifeline of civilizations for thousands of years. As a destination, it offers an unparalleled journey through history, culture, and natural beauty. Flowing through 11 countries, its most iconic section lies in Egypt, where it serves as the backdrop for some of humanity's greatest achievements.</p>
             </div>
             <button type="button" class="bookmark-action" aria-label="Remove bookmark">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae785c420c97267ac981f08c07dc55b5e385399d76b7d52d4adf6024d5f0ea12?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="" class="action-icon" />
+              <img src="../assets/bookmark-dashboard.png" alt="" class="action-icon" />
             </button>
           </article>
 
           <article class="bookmark-card">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8552bf776a0158325454421348cebb12b034dec1d822ce834e68481ba3f112be?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="The Nile River" class="bookmark-image" />
+            <img src="../assets/the-nile.png" alt="The Nile River" class="bookmark-image" />
             <div class="bookmark-content">
               <h3 class="bookmark-title">THE NILE</h3>
               <p class="bookmark-description">The Nile, stretching over 6,650 kilometers, is the world's longest river and a lifeline of civilizations for thousands of years. As a destination, it offers an unparalleled journey through history, culture, and natural beauty. Flowing through 11 countries, its most iconic section lies in Egypt, where it serves as the backdrop for some of humanity's greatest achievements.</p>
             </div>
             <button type="button" class="bookmark-action" aria-label="Remove bookmark">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae785c420c97267ac981f08c07dc55b5e385399d76b7d52d4adf6024d5f0ea12?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="" class="action-icon" />
+              <img src="../assets/bookmark-dashboard.png" alt="" class="action-icon" />
             </button>
           </article>
   
@@ -335,30 +352,31 @@
       <div class="footer-logo">OasisSeek</div>
       <p class="footer-description">Your Gateway to Egypt's Hidden Treasures</p>
       </div>
+      
       <nav class="footer-nav">
         <h3 class="footer-nav-title">Navigates</h3>
         <a href="landing-page.html" class="footer-nav-link">Home</a>
-        <a href="places-list.html" class="footer-nav-link">Places</a>
+        <a href="place-list.html" class="footer-nav-link">Places</a>
         <a href="event-list.html" class="footer-nav-link">Events</a>
         <a href="about.html" class="footer-nav-link">About</a>
       </nav>
       <div class="footer-nav">
         <h3 class="footer-nav-title">Contact</h3>
         <div class="social-links">
-          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/82410e63410082f05cbcd4776b0f53d214411487582452efac6a22a5af2103d7?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="Social media link" class="social-icon" /></a>
-          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/134bcf82c490247938a6cecd25e32f7841efd8290828d100192cfc9e505200e7?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="Social media link" class="social-icon" /></a>
-          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a923cb32070ac414cf6276ad94a6ed5bdfcf4ceb25f00008e64d3fce6fa250fb?placeholderIfAbsent=true&apiKey=9813aeb455d842cea0d227df786a7f1d" alt="Social media link" class="social-icon" /></a>
+          <a href="#"><img src="../assets/instagram.png" alt="Social media link" class="social-icon" /></a>
+          <a href="#"><img src="../assets/twitter.png" alt="Social media link" class="social-icon" /></a>
+          <a href="#"><img src="../assets/whatsapp.png" alt="Social media link" class="social-icon" /></a>
         </div>
       </div>
     </div>
-    <hr class="footer-divider" />
+    <hr class="footer-divider"/>
     <p class="copyright">Copyright © 2024 OasisSeek. All rights reserved.</p>
   </footer>
 
 </div>
 </div>
   
-<!-- =============== KODE JAVASCRIPT ================= -->
+<!-- =============== JAVASCRIPT UNTUK UP PROFILE================= -->
   <script>
     // UPLOAD FOTO
     const fileInput = document.getElementById('file-input');
