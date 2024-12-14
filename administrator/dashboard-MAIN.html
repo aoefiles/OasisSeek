@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Main Dashboard- OasisSeek</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+
+  <style>
+    .stats-grid {
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    gap: 36px;
+    font-family: Poppins, sans-serif;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+    
+  .stats-card {
+    border-radius: 0;
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    width: 327px;
+    margin: auto 0;
+  }
+
+  .card-content {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 31px;
+  }
+
+  @media (max-width: 991px) {
+    .card-content {
+      padding: 0 20px;
+    }
+  }
+
+  .stats-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 23px;
+    justify-content: start;
+  }
+
+  .stats-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 73px;
+  }
+
+  .stats-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .stats-number {
+    color: black;
+    font-size: 30px;
+    font-family: 'Sora',sans-serif;
+    font-weight: 600;
+  }
+
+  .stats-label {
+    color: rgb(116, 113, 113);
+    font-size: 20px;
+    margin-top: 17px;
+  }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container-dashboard">
+    <!-- ======= SIDEBAR DASHBOARD ========  -->
+    <div class="sidebar-dashboard">
+      <div class="logo-dashboard">OasisSeek</div>
+      <ul class="menu">
+        <li>
+          <a href="dashboard-MAIN.html">
+            <img src="../assets/dashboard-icon.png" alt="Dashboard Icon">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-POST.html">
+            <img src="../assets/manage-icon.png" alt="Manage Posts Icon">
+            Manage Posts
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- ======= MAIN DASHBOARD ========  -->
+    <div class="main-dashboard">
+      <div class="dashboard">
+
+        <!-- ===== Header =======  -->
+        <header class="dashboard-header">
+          <h1 class="page-title-dashboard">Dashboard</h1>
+          <div class="user-profile-dashboard">
+            <img
+              class="profile-icon-dashboard"
+              src="../assets/profile-admin.png"
+              alt="User profile"
+            />
+            <div class="profile-text-dashboard">Admin</div>
+          </div>
+        </header>
+
+        <!-- ===== Konten Stats =======  -->
+        <div class="dashboard-content">
+          <section class="stats-grid" aria-label="Dashboard Statistics">
+            <div class="stats-card">
+              <div class="card-content">
+                <div class="stats-wrapper">
+                  <img class="stats-icon" src="../assets/stats-icon1.png" alt="Users icon" />
+                  <div class="stats-info">
+                    <div class="stats-number">16</div>
+                    <div class="stats-label">Total Users</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="stats-card">
+              <div class="card-content">
+                <div class="stats-wrapper">
+                  <img class="stats-icon" src="../assets/stats-icon2.png" alt="Posts icon" />
+                  <div class="stats-info">
+                    <div class="stats-number">10</div>
+                    <div class="stats-label">Total Posts</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</body>
+</html>
