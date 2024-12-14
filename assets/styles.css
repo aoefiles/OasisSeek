@@ -1793,3 +1793,137 @@ padding: 100px 20px 0;
     text-align: center;
   }
 }
+
+
+
+/* ==========================================================
+   DASHBOARD ADMIN STYLING
+   ==========================================================*/
+
+   .container-dashboard {
+     display: flex;
+     height: 100vh;
+   }
+   
+   /*======= sidebar ======= */
+    .sidebar-dashboard {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 200px;
+    }
+   
+    .logo-dashboard {
+      font-family: 'Underdog', sans-serif;
+      background: linear-gradient(#ff9900, #734c10);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+   
+    .menu {
+      padding: 0; 
+      margin: 0;
+    }
+   
+    .menu li {
+      list-style: none; 
+      margin-bottom: 15px; 
+      display: flex; 
+      align-items: center;
+    }
+   
+    .menu li a {
+      color: #e0d9d9; 
+      text-decoration: none; 
+      font-family: 'Sora', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex; 
+      align-items: center;
+      gap: 10px; 
+      transition: color 0.3s ease; 
+    }
+   
+    .menu li a:hover {
+      color: #734c10; 
+    }
+   
+    .menu li a.active {
+      color: #734c10; 
+    }
+
+    .menu li img {
+      width: 20px; 
+      height: 20px;
+    }
+   
+   /*======= main dashboard ======= */
+   .main-dashboard {
+     flex-grow: 1;
+     padding: 15px;
+   }
+   
+   
+   .dashboard {
+     display: flex;
+     flex-direction: column; 
+     height: 100%;
+     width: 100%;
+     background-color: #ebdac8;
+     border-radius: 16px;
+     padding: 20px; 
+   }
+
+
+   /*======= header dashboard ======= */
+   .dashboard-header {
+     display: flex;
+     width: 100%;
+     align-items: center;
+     gap: 40px;
+     font-family: Sora, sans-serif;
+     color: #000;
+     justify-content: space-between;
+     margin-bottom: 20px;
+   
+   }
+   
+   .page-title-dashboard {
+     font-size: 35px;
+     margin: 0; 
+   }
+
+   /*======= profile dashboard ======= */
+   .user-profile-dashboard {
+     display: flex;
+     align-items: center;
+     border-radius: 14px;
+     background: #ebdac8;
+     padding: 10px 5px;
+     font-size: 20px;
+     gap: 3px;
+   }
+   
+   .profile-icon-dashboard {
+     width: 34px;
+     height: 34px;
+     object-fit: contain;
+     margin-right: 2px;
+   }
+   
+   .profile-text-dashboard {
+     font-weight: bold;
+     margin-left: 0px;
+     font-size: 16px;
+   }
+   
+   @media (max-width: 991px) {
+     .header-dashboard {
+       flex-wrap: wrap;
+       gap: 20px;
+     }
+   }
+   
+
+  
