@@ -6,8 +6,9 @@ OasisSeek adalah aplikasi berbasis web informatif dirancang untuk memudahkan wis
 ## Fitur Aplikasi 🤖
 1. Menampilkan destinasi wisata khas Mesir beserta detail foto yang dapat menjadi acuan bagi pengunjung website.
 2. Menampilkan event/acara menarik beserta detail yang mungkin dikunjungi bagi pengunjung.
-3. Menyimpan atau membagikan postingan destinasi wisata Mesir yang mungkin menarik bagi pengunjung.
-4. Melakukan pencarian terhadap event tertentu berdasarkan nama acara atau tanggal
+3. Menyimpan postingan destinasi wisata Mesir yang mungkin menarik bagi pengunjung.
+4. Melakukan pencarian terhadap event tertentu berdasarkan nama acara atau tanggal.
+5. Mendaftarkan akun ke akun setelah memiliki akun.
 
 ## Teknologi yang digunakan 🧑‍💻
 1. HTML
@@ -16,46 +17,35 @@ OasisSeek adalah aplikasi berbasis web informatif dirancang untuk memudahkan wis
 4. PHP
 5. MySQL
 6. Visual Studio Code
-7. XAMPP
+7. Laragon
 8. Git
 9. GitHub
 
 ## Struktur Project 📂
 ```
-ResepoItaliano/
-|── app                 # app digunakan untuk mengatur aplikasi
-│   ├── App/            # App digunakan untuk mengatur konfigurasi aplikasi
-│   ├── Config/         # Config digunakan untuk mengatur konfigurasi database
-│   ├── Controllers/    # Controller digunakan untuk mengatur permintaan dan meresponsnya
-│   ├── Domain/         # Domain digunakan untuk mengatur domain aplikasi
-│   ├── Exception/      # Exception digunakan untuk mengatur penanganan error
-│   ├── Middleware/     # Middleware digunakan untuk mengatur middleware aplikasi
-│   ├── Repository/     # Repository digunakan untuk mengatur repository aplikasi
-│   ├── Service/        # Service digunakan untuk mengatur service aplikasi
-│   ├── View/           # View digunakan untuk mengatur tampilan aplikasi
-├── public/             # public digunakan untuk mengatur file publik aplikasi
+OasisSeek/               
+│   ├── admin/          # admin digunakan untuk menyimpan halaman pada sisi admin
 │   ├── css/            # css digunakan untuk menyimpan style aplikasi
+│   ├── database/       # database digunakan untuk konfigurasi database aplikasi
 │   ├── images/         # images digunakan untuk menyimpan gambar aplikasi
-│   ├── script/         # script digunakan untuk menyimpan script aplikasi
-├── config/             # config digunakan untuk mengatur konfigurasi aplikasi
-├── public/             # public digunakan untuk mengatur file publik aplikasi
-│   .gitignore          # gitignore digunakan untuk mengatur file yang akan diabaikan oleh git
-│   autoload.php        # autoload.php digunakan untuk mengatur autoload aplikasi
-│   LICENSE.txt         # LICENSE digunakan untuk mengatur lisensi aplikasi
+│   ├── middleware/     # middleware digunakan untuk mengatur middleware aplikasi
+│   ├── model/          # model digunakan untuk menyimpan model tabel pada database
+│   ├── template/       # template digunakan untuk menyimpan template komponen pada aplikasi
+│   ├── users/          # users digunakan untuk menyimpan halaman dashboard user
 │   README.md           # README digunakan untuk mengatur deskripsi aplikasi
 ```
 
 ## Demo Aplikasi
 Klik GIF untuk melihat full video
 
-[![Tonton Full di youtube](/public/images/demo.gif)](https://youtu.be/GkqchF9lrTc?feature=shared)
-Atau bisa diakses melalui link berikut :
+[![Tonton Full di youtube](/images/assets/demo.gif)](https://youtu.be/GkqchF9lrTc?feature=shared)
+Atau bisa diakses melalui link berikut : oasisseek.ifunsoed23.xyz
 
 ## Cara Install 👾
 1. Clone repository ini.
-2. Pindahkan folder project ke dalam folder `htdocs` pada XAMPP.
+2. Pindahkan folder project ke dalam folder `www` pada laragon.
 3. Buka Laragon dan jalankan Apache dan MySQL.
-4. Buka browser dan ketikkan `localhost/ResepoItaliano`. Jika cara ini tidak berhasil, buka Code Editor kalian lalu buka terminal. Setelah itu, pindah direktorinya ke public dengan menjalankan perintah `cd public`, lalu jalankan perintah `php -S localhost:3000`.
+4. Buka browser dan ketikkan `localhost/OasisSeek`. Jika cara ini tidak berhasil, buka Code Editor kalian lalu buka terminal. Setelah itu, pindah direktorinya ke public dengan menjalankan perintah `cd public`, lalu jalankan perintah `php -S localhost:3000`.
 5. Selesai.
 
 ## Kontributor 👷‍♂️
