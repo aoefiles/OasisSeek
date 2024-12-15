@@ -49,6 +49,7 @@ ResepoItaliano/
 Klik GIF untuk melihat full video
 
 [![Tonton Full di youtube](/public/images/demo.gif)](https://youtu.be/GkqchF9lrTc?feature=shared)
+Atau bisa diakses melalui link berikut :
 
 ## Cara Install 👾
 1. Clone repository ini.
