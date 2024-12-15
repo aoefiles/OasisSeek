@@ -1818,7 +1818,8 @@ padding: 100px 20px 0;
       -webkit-background-clip: text;
       color: transparent;
       font-size: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      font-weight: 600;
     }
    
     .menu {
@@ -1862,13 +1863,15 @@ padding: 100px 20px 0;
    .main-dashboard {
      flex-grow: 1;
      padding: 15px;
+     margin-bottom: 50px;
+     padding-bottom: 10px;
    }
    
    
    .dashboard {
      display: flex;
      flex-direction: column; 
-     height: 100%;
+     height: 200%;
      width: 100%;
      background-color: #ebdac8;
      border-radius: 16px;
@@ -1917,6 +1920,10 @@ padding: 100px 20px 0;
      margin-left: 0px;
      font-size: 16px;
    }
+
+   .dashboard-content {
+    padding: 0px 40px;
+  }
    
    @media (max-width: 991px) {
      .header-dashboard {
